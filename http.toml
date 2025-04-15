@@ -1,0 +1,13 @@
+project = "coni"
+commands = ["go mod init", "echo hello"]
+dirs = ["internal", "internal/server"]
+
+[files]
+
+[files.main]
+path = "cmd/main.go"
+data = "package main\n\nfunc main(){\n\n}"
+
+[files.server]
+path = "internal/server/server.go"
+data = "package server\n\ntype Server struct{\nserver *http.Server\n}"

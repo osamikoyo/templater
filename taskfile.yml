@@ -1,0 +1,8 @@
+version : '3'
+
+tasks:
+  build:
+    cmds:
+      - nimble compile src/hello.nim
+      - rm -rf hello
+      - mv src/hello .

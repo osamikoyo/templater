@@ -18,7 +18,9 @@ data = "package server\n\ntype Server struct{\nserver *http.Server\n}"
 
 const HOME_DIR = ".larny-templates"
 
-proc createWith*(filepath, data: string) =
+proc createWith*(path, data: string) =
+  let filepath = path & ".toml"
+
   try:
     createDir(parentDir(filepath)) 
     writeFile(filepath, data)
