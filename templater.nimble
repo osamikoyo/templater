@@ -5,7 +5,7 @@ author        = "Osamikoyo"
 description   = "A new awesome nimble package"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["hello"]
+bin           = @["templater"]
 
 
 # Dependencies
