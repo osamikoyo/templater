@@ -18,5 +18,3 @@ proc run_app*(args : seq[string]) =
         let path = HOME_DIR & "/" & args[1] &  ".toml"
         let pipe : Pipeline = parseTempl(path)
         pipe.runPipeline()
-proc hello(goida : string) =
-    
